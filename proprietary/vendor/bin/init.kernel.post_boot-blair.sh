@@ -243,10 +243,6 @@ echo 85 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/hispeed_load
 echo "0:1113600" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
 echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
 
-# set intruppt affinity for IPA and IPCC from cpus 1-5
-echo 3e > /proc/irq/28/smp_affinity
-echo 3e > /proc/irq/14/smp_affinity
-
 # Enable bus-dcvs
 for device in /sys/devices/platform/soc
 do
