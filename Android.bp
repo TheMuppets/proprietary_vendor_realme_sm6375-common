@@ -222,13 +222,6 @@ dex_import {
 }
 
 dex_import {
-	name: "oplus-ims-ext",
-	owner: "realme",
-	jars: ["proprietary/system_ext/framework/oplus-ims-ext.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
 	name: "qcrilhook",
 	owner: "realme",
 	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],

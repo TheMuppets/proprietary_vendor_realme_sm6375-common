@@ -16,14 +16,8 @@ INSERT INTO qcril_emergency_source_mcc_table VALUES('222','112','','');
 INSERT INTO qcril_emergency_source_mcc_table VALUES('222','911','','');
 INSERT INTO qcril_emergency_source_mcc_table VALUES('222','999','','');
 INSERT INTO qcril_emergency_source_mcc_table VALUES('222','08','','');
-/*
-//xuchao@NETWORK.CALL.2912365, 2021/1/5, DELETE for delete 118 ecc number for IT
 INSERT INTO qcril_emergency_source_mcc_table VALUES('222','118','','');
-*/
-/*
-//Zhouhongfan@NETWORK.CALL.2862354, 2021/12/30, DELETE for delete 119 ecc number for IT
 INSERT INTO qcril_emergency_source_mcc_table VALUES('222','119','','');
-*/
 INSERT INTO qcril_emergency_source_mcc_table VALUES('226','112','','');
 INSERT INTO qcril_emergency_source_mcc_table VALUES('226','911','','');
 INSERT INTO qcril_emergency_source_mcc_table VALUES('230','112','','');

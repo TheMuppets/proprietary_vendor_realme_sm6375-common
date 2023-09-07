@@ -10,7 +10,5 @@ INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES('qcrildb
 UPDATE qcril_properties_table SET def_val="" WHERE property="all_bc_msg";
 UPDATE qcril_properties_table SET def_val="true" WHERE property="persist.vendor.radio.bar_fake_gcell";
 UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.radio.custom_ecc";
-UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.radio.relay_oprt_change";
 UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.radio.lte_vrte_ltd";
 UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.radio.cs_srv_type";
-UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.radio.poweron_opt";
