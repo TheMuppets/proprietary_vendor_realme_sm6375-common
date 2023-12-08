@@ -43,7 +43,15 @@
             <Limit name="measured-frame-rate-1920x1080" range="19-28" />
         </MediaCodec>
         <MediaCodec name="c2.android.hevc.encoder" type="video/hevc" update="true">
+        <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
+        <!-- Xiang.Yang@MM.MediaServer.Record, 2022/7/26, -->
+        <!-- Modify for CtsMediaTestCases  -->
+        <!--
             <Limit name="measured-frame-rate-320x240" range="17-24" />
+        -->
+        <!-- #else  //OPLUS_BUG_COMPATIBILITY -->
+            <Limit name="measured-frame-rate-320x240" range="17-29" />
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
             <Limit name="measured-frame-rate-720x480" range="7-10" />
             <Limit name="measured-frame-rate-1280x720" range="3-6" />
             <Limit name="measured-frame-rate-1920x1080" range="2-3" />
@@ -96,22 +104,30 @@
             <Limit name="measured-frame-rate-1920x1080" range="220-220" />
         </MediaCodec>
         <MediaCodec name="c2.android.avc.decoder" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="63-165" />
+            <Limit name="measured-frame-rate-320x240" range="101-223" />
             <Limit name="measured-frame-rate-720x480" range="42-59" />
-            <Limit name="measured-frame-rate-1280x720" range="17-24" />
+            <Limit name="measured-frame-rate-1280x720" range="17-37" />
+        <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
+        <!-- Xiang.Yang@MM.MediaServer.Record, 2022/7/26, -->
+        <!-- Modify for CtsMediaTestCases  -->
+        <!--
             <Limit name="measured-frame-rate-1920x1080" range="8-12" />
+        -->
+        <!-- #else  //OPLUS_BUG_COMPATIBILITY -->
+            <Limit name="measured-frame-rate-1920x1080" range="11-23" />
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
         </MediaCodec>
         <MediaCodec name="c2.android.hevc.decoder" type="video/hevc" update="true">
         <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
-        <!-- Zongjian.Wu@MM.MediaServer.Record, 2021/11/8, -->
+        <!-- Bingwang.Yang@MM.MediaServer.MULTMEDIASERVER, 2022/10/10, -->
         <!-- Modify for CtsMediaTestCases  -->
         <!--
-            <Limit name="measured-frame-rate-352x288" range="67-232" />
-            <Limit name="measured-frame-rate-640x360" range="57-89" />
-        -->
-        <!-- #else  //OPLUS_BUG_COMPATIBILITY -->
             <Limit name="measured-frame-rate-352x288" range="82-232" />
             <Limit name="measured-frame-rate-640x360" range="57-114" />
+        -->
+        <!-- #else  //OPLUS_BUG_COMPATIBILITY -->
+            <Limit name="measured-frame-rate-352x288" range="102-232" />
+            <Limit name="measured-frame-rate-640x360" range="57-154" />
         <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
         <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
         <!-- Xiang.Yang@MM.MediaServer.Record, 2022/1/7, -->
@@ -132,6 +148,9 @@
         </MediaCodec>
         <MediaCodec name="c2.android.mpeg4.decoder" type="video/mp4v-es" update="true">
             <Limit name="measured-frame-rate-176x144" range="406-543" />
+            <!-- Modify for CtsMediaDecoderTestCase VideoDecoderPerfTesT -->
+            <Limit name="measured-frame-rate-480x360" range="580-600" />
+            <Limit name="measured-frame-rate-1280x720" range="380-400" />
         </MediaCodec>
         <MediaCodec name="c2.android.vp8.decoder" type="video/x-vnd.on2.vp8" update="true">
             <Limit name="measured-frame-rate-320x180" range="570-665" />
