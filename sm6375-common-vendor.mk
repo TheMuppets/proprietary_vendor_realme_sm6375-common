@@ -1120,8 +1120,8 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TimeService \
     PowerOffAlarm \
-    HotwordEnrollmentOKGoogle \
-    HotwordEnrollmentXGoogle \
+    HotwordEnrollmentOKGoogleHEXAGON \
+    HotwordEnrollmentXGoogleHEXAGON \
     ImsRcsService \
     QtiTelephony \
     QtiTelephonyService \
