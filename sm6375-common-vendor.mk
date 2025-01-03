@@ -495,15 +495,6 @@ PRODUCT_PACKAGES += \
     vulkan.adreno \
     libC2D2 \
     libCB \
-    libOmxAacDec \
-    libOmxAlacDec \
-    libOmxAmrDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxEvrcDec \
-    libOmxG711Dec \
-    libOmxQcelp13Dec \
-    libOmxWmaDec \
     libOpenCL \
     libVkLayer_q3dtools \
     libadreno_utils \
@@ -542,8 +533,6 @@ PRODUCT_PACKAGES += \
     audio.primary.holi \
     sound_trigger.primary.holi \
     libFileMux_proprietary \
-    libOmxDsdDec \
-    libOmxVideoDSMode \
     liba2dpoffload \
     libacdb-fts \
     libacdbloader \
@@ -558,7 +547,6 @@ PRODUCT_PACKAGES += \
     libcapiv2svarnn \
     libcapiv2vop \
     libcomprcapture \
-    libdsd2pcm \
     libexthwplugin \
     libfastcrc \
     libgcs-calwrapper \
