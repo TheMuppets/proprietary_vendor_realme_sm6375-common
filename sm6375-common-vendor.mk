@@ -259,11 +259,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6375-common/proprietary/vendor/etc/ltm_config_samsung_amb655xl08_amoled_fhd+_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_amb655xl08_amoled_fhd+_panel.xml \
     vendor/realme/sm6375-common/proprietary/vendor/etc/ltm_config_samsung_ams662zs01_dvt_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_ams662zs01_dvt_dsc_cmd_mode_panel.xml \
     vendor/realme/sm6375-common/proprietary/vendor/etc/media_blair/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_blair/video_system_specs.json \
-    vendor/realme/sm6375-common/proprietary/vendor/etc/media_codecs_blair.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_blair.xml \
-    vendor/realme/sm6375-common/proprietary/vendor/etc/media_codecs_holi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_holi.xml \
-    vendor/realme/sm6375-common/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
-    vendor/realme/sm6375-common/proprietary/vendor/etc/media_codecs_performance_blair.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_blair.xml \
-    vendor/realme/sm6375-common/proprietary/vendor/etc/media_codecs_performance_holi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_holi.xml \
     vendor/realme/sm6375-common/proprietary/vendor/etc/media_holi/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_holi/video_system_specs.json \
     vendor/realme/sm6375-common/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
     vendor/realme/sm6375-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
