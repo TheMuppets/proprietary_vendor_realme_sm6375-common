@@ -7,6 +7,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/realme/sm6375-common/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
+    vendor/realme/sm6375-common/proprietary/odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc \
     vendor/realme/sm6375-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/realme/sm6375-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
     vendor/realme/sm6375-common/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
@@ -812,6 +813,8 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.communicationcenter_compat@1.1 \
     vendor.oplus.hardware.ims@1.0 \
     vendor.oplus.hardware.radio@1.0 \
+    vendor.oplus.hardware.stability.oplus_project-V1-ndk_platform \
+    vendor.oplus.hardware.stability.oplus_project@1.0 \
     odm_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Encoder_so \
     odm_lib_rfsa_adsp_libVDHexagonBlurless_v2_skel_so \
     odm_lib_rfsa_adsp_libarc_gk_pt_hvx_skel_so \
@@ -861,6 +864,7 @@ PRODUCT_PACKAGES += \
     c2_manifest_vendor.xml \
     vendor.qti.gnss@4.0-service.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
+    manifest_oplus_stability_project_aidl.xml \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -931,6 +935,7 @@ PRODUCT_PACKAGES += \
     tcmd \
     wfdservice \
     android.hardware.drm@1.3-service.widevine \
+    vendor.oplus.hardware.stability.oplus_project-V1-service \
     oplus_sensor_fb
 
 PRODUCT_PACKAGES += \

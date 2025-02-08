@@ -13865,6 +13865,59 @@ cc_prebuilt_library_shared {
     device_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.stability.oplus_project-V1-ndk_platform",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.stability.oplus_project@1.0",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.oplus.hardware.stability.oplus_project@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
 prebuilt_rfsa {
     name: "odm_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Encoder_so",
     filename: "capi_v2_aptX_CLHDAD_Encoder.so",
@@ -14333,6 +14386,15 @@ prebuilt_etc_xml {
     name: "manifest_android.hardware.drm@1.3-service.widevine.xml",
     owner: "realme",
     src: "proprietary/odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_oplus_stability_project_aidl.xml",
+    owner: "realme",
+    src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_stability_project_aidl.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     device_specific: true,
@@ -16428,6 +16490,39 @@ cc_prebuilt_binary {
                 "libutils",
                 "libwvhidl",
                 "libbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.oplus.hardware.stability.oplus_project-V1-service",
+    owner: "realme",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service",
+            ],
+            shared_libs: [
+                "vendor.oplus.hardware.stability.oplus_project-V1-ndk_platform",
+                "libbase",
+                "libbinder",
+                "libcutils",
+                "liblog",
+                "libbinder_ndk",
+                "libutils",
+                "libhardware",
                 "libc++",
                 "libc",
                 "libm",
