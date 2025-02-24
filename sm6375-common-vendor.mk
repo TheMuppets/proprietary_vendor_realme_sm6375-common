@@ -526,7 +526,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
     vendor.qti.hardware.vpp@2.0 \
-    sound_trigger.primary.holi \
     libFileMux_proprietary \
     libacdb-fts \
     libacdbloader \
