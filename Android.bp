@@ -14108,33 +14108,6 @@ cc_prebuilt_library_shared {
     device_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.urcc-V1-ndk_platform",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libjsoncpp_shim",
-                "libbinder_ndk",
-                "libjsoncpp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
 prebuilt_rfsa {
     name: "odm_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Encoder_so",
     filename: "capi_v2_aptX_CLHDAD_Encoder.so",
