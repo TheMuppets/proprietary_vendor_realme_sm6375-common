@@ -924,7 +924,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.1 \
     liblvimfs \
     liblvimfs_wrapper \
-    liboplus-uah-client \
     liboplus_service \
     libwvhidl \
     libwvdrmengine \
