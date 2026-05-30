@@ -767,7 +767,6 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
-    vendor.oplus.hardware.radio-V2-ndk_platform \
     vendor.qti.data.factory@2.0 \
     vendor.qti.data.factory@2.1 \
     vendor.qti.data.factory@2.2 \
@@ -931,7 +930,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.communicationcenter_compat@1.0 \
     vendor.oplus.hardware.communicationcenter_compat@1.1 \
     vendor.oplus.hardware.ims@1.0 \
-    vendor.oplus.hardware.performance-V1-ndk_platform \
     vendor.oplus.hardware.radio@1.0 \
     odm_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Encoder_so \
     odm_lib_rfsa_adsp_libVDHexagonBlurless_v2_skel_so \
